@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: system-ui;
+}
+
+.container{
+  min-height: 100vh;
+  width: 95vw;
+  margin: 20px auto;
+  background: #f7f7f7;
+}
+
+.weatherForm{
+    min-height: 100px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    background-image: linear-gradient(to right, #388fd3 , #ff3d6b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+form{
+    padding: 30px;
+    background: white;
+}
+
+.p{
+    margin: 20px 0;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input{
+    margin: 10px 0;
+    padding: 10px;
+    width: 400px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    background: #f7f7f7;
+    transition: .2s all ease-in-out;
+}
+
+input:hover{
+    border-color: #388fd3;
+}
+
+button{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: #101540;
+    transition: .5s all ease-in-out;
+}
+
+@media screen and (max-width: 730px){
+    h1{
+        font-size: 25px;
+    }
+
+    form{
+        padding: 30px 20px;
+    }
+
+    input{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    form{
+        padding: 30px 10px;
+    }
+
+    input{
+        width: 250px;
+    }
+}
